@@ -4,12 +4,12 @@ before_install:
   - sudo apt-get update && sudo apt-get install -y shellcheck
 
 script:
-  - ls -l 
-  - bash test.sh
   - ls -l
+  - bash test.sh
+  - ls -l 
   - pwd
-  - cat file 
+  - cat file
 
-notifications:              
-email:
-  on_success: never
+notifications:
+    email:
+          on_success: never
