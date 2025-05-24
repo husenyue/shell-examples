@@ -3,8 +3,7 @@
 for file in ./*.sh;do
 	if [[ $file =~ $0 ]];then
 		continue
-	fi 
+	fi
 	printf "==================== %s ====================\n" "$file"
 	bash "$file"
 done
-
