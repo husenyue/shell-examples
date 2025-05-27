@@ -3,16 +3,11 @@ language: bash
 before_install:
   - sudo apt-get update && sudo apt-get install -y shellcheck
 
-branches:
-  only:
-  - master
-
 script:
   - ls -l
   - bash test.sh
   - ls -l
   - pwd
-  - cat file
 
 notifications:
   email:
